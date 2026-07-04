@@ -1,0 +1,86 @@
+<svg width="1000" height="700" viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="extGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="apiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="mlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="feGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c084fc"/>
+      <stop offset="100%" style="stop-color:#9333ea"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="700" fill="url(#bgGrad)"/>
+
+  <text x="500" y="50" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#f8fafc" text-anchor="middle">TruthShield — System Architecture</text>
+
+  <!-- Chrome Extension -->
+  <rect x="380" y="90" width="240" height="80" rx="16" fill="url(#extGrad)"/>
+  <text x="500" y="122" font-family="Arial" font-size="19" font-weight="bold" fill="#1e293b" text-anchor="middle">🧩 Chrome Extension</text>
+  <text x="500" y="146" font-family="Arial" font-size="13" fill="#1e293b" text-anchor="middle">User-facing browser client</text>
+
+  <line x1="500" y1="170" x2="500" y2="220" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Spring Boot API -->
+  <rect x="340" y="225" width="320" height="90" rx="16" fill="url(#apiGrad)"/>
+  <text x="500" y="258" font-family="Arial" font-size="19" font-weight="bold" fill="#052e16" text-anchor="middle">☕ Spring Boot API</text>
+  <text x="500" y="280" font-family="Arial" font-size="13" fill="#052e16" text-anchor="middle">REST Endpoints · JWT Auth · Business Logic</text>
+  <text x="500" y="298" font-family="Arial" font-size="13" fill="#052e16" text-anchor="middle">Java</text>
+
+  <!-- Arrow to ML -->
+  <line x1="660" y1="270" x2="770" y2="270" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="770" y1="300" x2="660" y2="300" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- ML Service -->
+  <rect x="770" y="225" width="200" height="90" rx="16" fill="url(#mlGrad)"/>
+  <text x="870" y="258" font-family="Arial" font-size="18" font-weight="bold" fill="#0c1e3e" text-anchor="middle">🧠 ML Service</text>
+  <text x="870" y="280" font-family="Arial" font-size="12" fill="#0c1e3e" text-anchor="middle">Python + Flask</text>
+  <text x="870" y="298" font-family="Arial" font-size="12" fill="#0c1e3e" text-anchor="middle">~95% Accuracy</text>
+
+  <!-- Arrow to DB -->
+  <line x1="500" y1="315" x2="500" y2="380" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="530" y1="380" x2="530" y2="315" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- MongoDB -->
+  <rect x="380" y="385" width="240" height="90" rx="16" fill="url(#dbGrad)"/>
+  <text x="500" y="418" font-family="Arial" font-size="19" font-weight="bold" fill="#052e16" text-anchor="middle">🍃 MongoDB Atlas</text>
+  <text x="500" y="440" font-family="Arial" font-size="13" fill="#052e16" text-anchor="middle">Users · Scan History · Content Data</text>
+  <text x="500" y="458" font-family="Arial" font-size="13" fill="#052e16" text-anchor="middle">Cloud Database</text>
+
+  <line x1="500" y1="475" x2="500" y2="530" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- React Dashboard -->
+  <rect x="360" y="535" width="280" height="90" rx="16" fill="url(#feGrad)"/>
+  <text x="500" y="568" font-family="Arial" font-size="19" font-weight="bold" fill="#2e1065" text-anchor="middle">⚛️ React.js Dashboard</text>
+  <text x="500" y="590" font-family="Arial" font-size="13" fill="#2e1065" text-anchor="middle">Analytics · Scan History · Alerts</text>
+  <text x="500" y="608" font-family="Arial" font-size="13" fill="#2e1065" text-anchor="middle">Frontend UI</text>
+
+  <!-- CI/CD badge -->
+  <rect x="60" y="600" width="220" height="60" rx="12" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+  <text x="170" y="626" font-family="Arial" font-size="14" font-weight="bold" fill="#f1f5f9" text-anchor="middle">🔄 GitHub Actions</text>
+  <text x="170" y="646" font-family="Arial" font-size="12" fill="#cbd5e1" text-anchor="middle">Automated Build &amp; Deploy</text>
+
+  <!-- JWT badge -->
+  <rect x="720" y="600" width="220" height="60" rx="12" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+  <text x="830" y="626" font-family="Arial" font-size="14" font-weight="bold" fill="#f1f5f9" text-anchor="middle">🔐 JWT Authentication</text>
+  <text x="830" y="646" font-family="Arial" font-size="12" fill="#cbd5e1" text-anchor="middle">Secures all API requests</text>
+</svg>
